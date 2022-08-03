@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signUpusers": [
+    {
+      "firstname": "manideep",
+      "lastname": "mahesh",
+      "emailaddress": "mani123@gmail.com",
+      "password": "mani123",
+      "gender": "male",
+      "phonenumber": "1234567891",
+      "address": "vizianagaram",
+      "id": 1
+    },
+    {
+      "fullname": "mahesh",
+      "mobilenumber": 1234567891,
+      "dateofbirth": "2022-08-05",
+      "email": "maheshmania@gmail.com",
+      "password": "123456",
+      "gender": "male",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

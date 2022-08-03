@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="row">
+      <div class="col md-6">
+          <div class="card">
+              <div class="text-center">
+                  <h1>SignUp</h1>
+                  <h6>Register Yourself !!</h6>
+              </div>
+              <form>
+                  <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Full Name</label>
+                          <input formControlName="fullname" type="text" class="form-control"
+                              id="exampleInputPassword1">
+                              
+                         
+                      </div>
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+                          <input formControlName="mobilenumber" type="number" class="form-control"
+                              id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Date of Birth</label>
+                          <input formControlName="dateofbirth" type="date" class="form-control"
+                              id="exampleInputPassword1">
+                      </div>
+                      <label  class="mb-2 mx-2">Gender:</label>
+                          <div class="form-check form-check-inline">
+                              <input formControlName="gender" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                  value="male">
+                              <label  class="form-check-label" for="inlineRadio1">Male</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input formControlName="gender" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                  value="female">
+                              <label f class="form-check-label" for="inlineRadio2">Female</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input formControlName="gender" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                                  value="Others">
+                              <label class="form-check-label" for="inlineRadio3">Others</label>
+                          </div>
+                     
+
+
+                      <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1"
+                              aria-describedby="emailHelp">
+
+                      </div>
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input formControlName="password" type="password" class="form-control"
+                              id="exampleInputPassword1">
+                      </div>
+
+                      <button type="submit" class="btn btn-danger mb-2">Submit</button>
+                  </form>
+              </form>
+              <a style="color:#fff;" routerLink="/login">Already Registered? Click here to Login!!</a>
+          </div>
+      </div>
+  </div>
+</div>
